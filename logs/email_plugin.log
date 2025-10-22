@@ -1,0 +1,32 @@
+Wed Oct 22 09:40:31 2025
+sendEmail called for recipient: jay795701@gmail.com
+Wed Oct 22 09:40:31 2025
+Initialized curl globally
+Wed Oct 22 09:40:31 2025
+Attempting to send email via SMTP
+Wed Oct 22 09:40:33 2025
+CURL error: Login denied
+Wed Oct 22 09:41:18 2025
+sendEmail called for recipient: jay795701@gmail.com
+Wed Oct 22 09:41:18 2025
+Initialized curl globally
+Wed Oct 22 09:41:18 2025
+Attempting to send email via SMTP
+Wed Oct 22 09:41:20 2025
+CURL error: Login denied
+Wed Oct 22 09:42:37 2025
+sendEmail called for recipient: jay795701@gmail.com
+Wed Oct 22 09:42:37 2025
+Email sent successfully via sendmail
+Wed Oct 22 09:46:16 2025
+sendEmail called for recipient: jay795701@gmail.com
+Wed Oct 22 09:46:16 2025
+Email sent successfully via sendmail
+Wed Oct 22 09:46:51 2025
+sendEmail called for recipient: jay795701@gmail.com
+Wed Oct 22 09:46:51 2025
+Initialized curl globally
+Wed Oct 22 09:46:51 2025
+Attempting to send email via SMTP
+Wed Oct 22 09:46:56 2025
+Email sent successfully
