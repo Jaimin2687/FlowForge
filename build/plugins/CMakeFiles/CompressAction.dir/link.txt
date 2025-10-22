@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -dynamiclib -Wl,-headerpad_max_install_names -o /Users/jaimin/workflow-engine/plugins/libCompressAction.so -install_name @rpath/libCompressAction.so CMakeFiles/CompressAction.dir/CompressAction.cpp.o  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libz.tbd

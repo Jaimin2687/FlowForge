@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -dynamiclib -Wl,-headerpad_max_install_names -o /Users/jaimin/workflow-engine/plugins/libMessagePlugin.so -install_name @rpath/libMessagePlugin.so CMakeFiles/MessagePlugin.dir/MessagePlugin.cpp.o  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd

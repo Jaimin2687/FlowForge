@@ -1,0 +1,383 @@
+Tue Oct 21 11:10:26 2025
+: Starting workflow (with overrides): BackupFiles
+Tue Oct 21 11:10:26 2025
+: Rule not satisfied for workflow: BackupFiles
+Tue Oct 21 11:10:26 2025
+: Engine exited.
+Tue Oct 21 11:20:12 2025
+: Engine exited.
+Tue Oct 21 11:26:43 2025
+: Starting workflow (with overrides): SendSMSAlert
+Tue Oct 21 11:26:43 2025
+:   Executing action: MessageAction with params: {"content":"Server alert: High CPU usage detected!","delay":0,"recipient":"+916354378559","type":"sms"}
+Tue Oct 21 11:26:43 2025
+: Engine exited.
+Tue Oct 21 11:29:59 2025
+: Starting workflow (with overrides): BackupFiles
+Tue Oct 21 11:29:59 2025
+: Rule not satisfied for workflow: BackupFiles
+Tue Oct 21 11:29:59 2025
+: Engine exited.
+Tue Oct 21 11:31:33 2025
+: Starting workflow (with overrides): BackupFiles
+Tue Oct 21 11:31:33 2025
+:   Executing action: PrintAction with params: Starting backup...
+Tue Oct 21 11:31:34 2025
+:   Action PrintAction completed.
+Tue Oct 21 11:31:34 2025
+:   Executing action: CompressAction with params: /Users/jaimin/workflow-engine/test_input
+Tue Oct 21 11:31:34 2025
+:   Action CompressAction completed.
+Tue Oct 21 11:31:34 2025
+:   Executing action: UploadAction with params: /Users/jaimin/workflow-engine/test_input
+Tue Oct 21 11:31:35 2025
+:   Action UploadAction completed.
+Tue Oct 21 11:31:35 2025
+: Workflow completed: BackupFiles
+Tue Oct 21 11:31:35 2025
+: Engine exited.
+Tue Oct 21 11:33:05 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 11:33:05 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 11:34:00 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 11:34:00 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 11:35:07 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 11:35:07 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 11:38:57 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 11:38:57 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 11:41:50 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 11:41:50 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 11:44:40 2025
+: Engine exited.
+Tue Oct 21 12:06:16 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:06:16 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:07:35 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:07:35 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:08:58 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:08:58 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:10:30 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:10:30 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:12:05 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:12:05 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:14:38 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:14:38 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:17:36 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:17:36 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:18:53 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:18:53 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:20:26 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:20:26 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:24:35 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:24:35 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:25:43 2025
+: Starting workflow: SendEmailReminder
+Tue Oct 21 12:25:43 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:25:43 2025
+: Starting workflow: SendSMSAlert
+Tue Oct 21 12:25:43 2025
+:   Executing action: MessageAction with params: {"content":"Server alert: High CPU usage detected!","delay":0,"recipient":"+916354378559","type":"sms"}
+Tue Oct 21 12:25:43 2025
+: Starting workflow: BackupFiles
+Tue Oct 21 12:25:43 2025
+:   Executing action: PrintAction with params: Starting backup...
+Tue Oct 21 12:25:43 2025
+:   Action PrintAction completed.
+Tue Oct 21 12:25:43 2025
+:   Executing action: CompressAction with params: project_folder
+Tue Oct 21 12:25:43 2025
+:   Action CompressAction completed.
+Tue Oct 21 12:25:43 2025
+:   Executing action: UploadAction with params: s3_bucket
+Tue Oct 21 12:25:43 2025
+:   Action UploadAction completed.
+Tue Oct 21 12:25:43 2025
+: Workflow completed: BackupFiles
+Tue Oct 21 12:25:44 2025
+:   Action MessageAction completed.
+Tue Oct 21 12:25:44 2025
+: Workflow completed: SendSMSAlert
+Tue Oct 21 12:27:50 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:27:50 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:29:34 2025
+: Starting workflow (with overrides): SendEmailReminder
+Tue Oct 21 12:29:34 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:45:23 2025
+: Starting workflow: SendEmailReminder
+Tue Oct 21 12:45:23 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:45:24 2025
+:   Action MessageAction completed.
+Tue Oct 21 12:45:24 2025
+: Workflow completed: SendEmailReminder
+Tue Oct 21 12:45:24 2025
+: Engine exited after running workflow: SendEmailReminder
+Tue Oct 21 12:47:39 2025
+: Starting workflow: SendEmailReminder
+Tue Oct 21 12:47:39 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:48:01 2025
+: Starting workflow: SendEmailReminder
+Tue Oct 21 12:48:01 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:48:51 2025
+: Starting workflow: SendEmailReminder
+Tue Oct 21 12:48:51 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+Tue Oct 21 12:49:00 2025
+: Starting workflow: SendEmailReminder
+Tue Oct 21 12:49:00 2025
+:   Executing action: MessageAction with params: {"content":"Don't forget to check the project status!","delay":0,"recipient":"jay795701@gmail.com","subject":"Project Reminder","type":"email"}
+2025-10-21 12:53:31 [MessageAction] SMTP send failed: Login denied
+Tue Oct 21 12:53:31 2025
+: Engine exited after running workflow: SendEmailReminder
+Tue Oct 21 15:55:42 2025
+: Engine exited.
+Tue Oct 21 15:55:47 2025
+: Engine exited.
+2025-10-21 15:55:55 [MessageAction] SMTP send failed: Login denied
+Tue Oct 21 15:55:55 2025
+: Engine exited.
+Tue Oct 21 16:01:06 2025
+: Engine exited.
+Tue Oct 21 16:25:49 2025
+: Engine exited after running workflow: BackupFiles
+2025-10-21 16:25:55 [MessageAction] SMTP send failed: Login denied
+Tue Oct 21 16:25:55 2025
+: Engine exited after running workflow: SendEmailReminder
+Tue Oct 21 16:49:42 2025
+: Engine exited.
+Tue Oct 21 17:04:45 2025
+: Engine exited.
+Tue Oct 21 19:51:14 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:51:37 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:52:08 2025
+: Engine exited after running workflow: SendSMSAlert
+Tue Oct 21 19:52:16 2025
+: Engine exited after running workflow: SendEmailReminder
+Tue Oct 21 19:52:48 2025
+: Engine exited after running workflow: SendEmailReminder
+Tue Oct 21 19:53:15 2025
+: Engine exited after running workflow: SendEmailReminder
+Tue Oct 21 19:53:42 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:54:16 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:55:09 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:56:08 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:56:16 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:56:23 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:56:30 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:56:37 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:56:44 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:56:50 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:56:56 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:57:02 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:57:09 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:57:17 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:57:24 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:57:32 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:57:40 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:57:50 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:58:00 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:58:10 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 19:58:25 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:01:30 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:02:40 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:02:49 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:03:01 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:03:14 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:03:26 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:03:40 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:03:56 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:04:13 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:04:31 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:04:58 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:07:43 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:08:15 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:08:28 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:08:44 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:08:58 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:09:17 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:09:33 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:09:58 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:11:19 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:16:43 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:17:02 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:17:24 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:17:38 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:17:51 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:18:03 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:21:59 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:22:09 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:22:27 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:22:38 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:22:50 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:23:11 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:23:25 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:23:37 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:24:11 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:24:23 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:24:35 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:24:46 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:25:06 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:25:27 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:25:44 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:25:58 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:26:10 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:27:18 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:27:28 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:27:46 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:27:57 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:28:10 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:28:22 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:28:34 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:28:49 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:29:05 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:35:38 2025
+: Engine exited after running workflow: BackupFiles
+Tue Oct 21 20:36:53 2025
+: Engine exited after running workflow: BackupFiles
+Wed Oct 22 09:33:38 2025
+: Engine exited after running workflow: BackupFiles
+Wed Oct 22 09:34:50 2025
+: Engine exited after running workflow: BackupFiles
+Wed Oct 22 09:36:00 2025
+: Engine exited after running workflow: BackupFiles
+Wed Oct 22 09:37:25 2025
+: Engine exited after running workflow: BackupFiles
+Wed Oct 22 09:37:40 2025
+: Engine exited after running workflow: BackupFiles
+Wed Oct 22 09:39:38 2025
+: Engine exited after running workflow: SendEmailReminder
+Wed Oct 22 09:40:33 2025
+: Engine exited after running workflow: SendEmailReminder
+Wed Oct 22 09:41:20 2025
+: Engine exited after running workflow: SendEmailReminder
+Wed Oct 22 09:42:37 2025
+: Engine exited after running workflow: SendEmailReminder
+Wed Oct 22 09:42:49 2025
+: Engine exited after running workflow: SendSMSAlert
+Wed Oct 22 09:46:16 2025
+: Engine exited after running workflow: SendEmailReminder
+Wed Oct 22 09:46:56 2025
+: Engine exited after running workflow: SendEmailReminder
+Wed Oct 22 09:57:38 2025
+: Engine exited after running workflow: TestPrintAction
+Wed Oct 22 09:57:50 2025
+: Engine exited after running workflow: BackupFiles
+Wed Oct 22 09:58:50 2025
+: Engine exited after running workflow: TestPrintAction
+Wed Oct 22 09:59:35 2025
+: Engine exited after running workflow: BackupFiles
+Wed Oct 22 09:59:55 2025
+: Engine exited after running workflow: TestPrintAction
+Wed Oct 22 10:29:52 2025
+: Engine exited.
+Wed Oct 22 10:54:33 2025
+: Engine exited.

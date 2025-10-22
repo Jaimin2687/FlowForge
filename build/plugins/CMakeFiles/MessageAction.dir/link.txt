@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -dynamiclib -Wl,-headerpad_max_install_names -o /Users/jaimin/workflow-engine/plugins/libMessageAction.so -install_name @rpath/libMessageAction.so CMakeFiles/MessageAction.dir/MessageAction.cpp.o  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
