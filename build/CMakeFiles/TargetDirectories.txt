@@ -1,0 +1,11 @@
+/Users/jaimin/workflow-engine/build/CMakeFiles/flowforge.dir
+/Users/jaimin/workflow-engine/build/CMakeFiles/edit_cache.dir
+/Users/jaimin/workflow-engine/build/CMakeFiles/rebuild_cache.dir
+/Users/jaimin/workflow-engine/build/src/utils/CMakeFiles/json_parser.dir
+/Users/jaimin/workflow-engine/build/src/utils/CMakeFiles/edit_cache.dir
+/Users/jaimin/workflow-engine/build/src/utils/CMakeFiles/rebuild_cache.dir
+/Users/jaimin/workflow-engine/build/plugins/CMakeFiles/EmailPlugin.dir
+/Users/jaimin/workflow-engine/build/plugins/CMakeFiles/MessagePlugin.dir
+/Users/jaimin/workflow-engine/build/plugins/CMakeFiles/CompressAction.dir
+/Users/jaimin/workflow-engine/build/plugins/CMakeFiles/edit_cache.dir
+/Users/jaimin/workflow-engine/build/plugins/CMakeFiles/rebuild_cache.dir

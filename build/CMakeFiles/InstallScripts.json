@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/jaimin/workflow-engine/build/cmake_install.cmake",
+		"/Users/jaimin/workflow-engine/build/src/utils/cmake_install.cmake",
+		"/Users/jaimin/workflow-engine/build/plugins/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,74 @@
+[
+{
+  "directory": "/Users/jaimin/workflow-engine/build",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/flowforge.dir/src/main.cpp.o -c /Users/jaimin/workflow-engine/src/main.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/main.cpp",
+  "output": "CMakeFiles/flowforge.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/flowforge.dir/src/WorkflowManager.cpp.o -c /Users/jaimin/workflow-engine/src/WorkflowManager.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/WorkflowManager.cpp",
+  "output": "CMakeFiles/flowforge.dir/src/WorkflowManager.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/flowforge.dir/src/Workflow.cpp.o -c /Users/jaimin/workflow-engine/src/Workflow.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/Workflow.cpp",
+  "output": "CMakeFiles/flowforge.dir/src/Workflow.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/flowforge.dir/src/PluginLoader.cpp.o -c /Users/jaimin/workflow-engine/src/PluginLoader.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/PluginLoader.cpp",
+  "output": "CMakeFiles/flowforge.dir/src/PluginLoader.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/flowforge.dir/src/Logger.cpp.o -c /Users/jaimin/workflow-engine/src/Logger.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/Logger.cpp",
+  "output": "CMakeFiles/flowforge.dir/src/Logger.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/flowforge.dir/src/ThreadPool.cpp.o -c /Users/jaimin/workflow-engine/src/ThreadPool.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/ThreadPool.cpp",
+  "output": "CMakeFiles/flowforge.dir/src/ThreadPool.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/flowforge.dir/src/Storage.cpp.o -c /Users/jaimin/workflow-engine/src/Storage.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/Storage.cpp",
+  "output": "CMakeFiles/flowforge.dir/src/Storage.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/flowforge.dir/src/RuleEngine.cpp.o -c /Users/jaimin/workflow-engine/src/RuleEngine.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/RuleEngine.cpp",
+  "output": "CMakeFiles/flowforge.dir/src/RuleEngine.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build/src/utils",
+  "command": "/usr/bin/clang++  -I/Users/jaimin/workflow-engine/src/utils -I/Users/jaimin/workflow-engine/build/_deps/json-src -g -std=gnu++17 -arch arm64 -o CMakeFiles/json_parser.dir/JSONParser.cpp.o -c /Users/jaimin/workflow-engine/src/utils/JSONParser.cpp",
+  "file": "/Users/jaimin/workflow-engine/src/utils/JSONParser.cpp",
+  "output": "src/utils/CMakeFiles/json_parser.dir/JSONParser.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build/plugins",
+  "command": "/usr/bin/clang++ -DCURL_STATICLIB -DEmailPlugin_EXPORTS -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -g -std=gnu++17 -arch arm64 -fPIC -o CMakeFiles/EmailPlugin.dir/EmailPlugin.cpp.o -c /Users/jaimin/workflow-engine/plugins/EmailPlugin.cpp",
+  "file": "/Users/jaimin/workflow-engine/plugins/EmailPlugin.cpp",
+  "output": "plugins/CMakeFiles/EmailPlugin.dir/EmailPlugin.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build/plugins",
+  "command": "/usr/bin/clang++ -DCURL_STATICLIB -DMessagePlugin_EXPORTS -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -g -std=gnu++17 -arch arm64 -fPIC -o CMakeFiles/MessagePlugin.dir/MessagePlugin.cpp.o -c /Users/jaimin/workflow-engine/plugins/MessagePlugin.cpp",
+  "file": "/Users/jaimin/workflow-engine/plugins/MessagePlugin.cpp",
+  "output": "plugins/CMakeFiles/MessagePlugin.dir/MessagePlugin.cpp.o"
+},
+{
+  "directory": "/Users/jaimin/workflow-engine/build/plugins",
+  "command": "/usr/bin/clang++ -DCompressAction_EXPORTS -I/Users/jaimin/workflow-engine/src -I/Users/jaimin/workflow-engine/src/utils -g -std=gnu++17 -arch arm64 -fPIC -o CMakeFiles/CompressAction.dir/CompressAction.cpp.o -c /Users/jaimin/workflow-engine/plugins/CompressAction.cpp",
+  "file": "/Users/jaimin/workflow-engine/plugins/CompressAction.cpp",
+  "output": "plugins/CMakeFiles/CompressAction.dir/CompressAction.cpp.o"
+}
+]
