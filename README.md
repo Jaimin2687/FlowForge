@@ -10,6 +10,7 @@ A modular, extensible C++ workflow automation engine inspired by Zapier/n8n/IFTT
 - Advanced rule engine for conditional execution with logical operators
 - Persistent state storage
 - Thread-safe logging
+- Menu-driven CLI with per-action parameter overrides
 - Example plugins: Compress (ZIP), Email (SMTP), Message (SMS)
 
 ## What's Included
@@ -45,7 +46,13 @@ The build produces `build/flowforge` and plugin shared libraries in `plugins/`.
 
 ### 3. Configure Workflows
 
-Edit `config/workflows.json` to define your workflows. Example workflows are provided.
+`config/workflows.json` ships with three ready-to-run examples:
+
+- `CompressFiles` → Archives `project_folder/` into `data/backups/`
+- `SendEmailReminder` → Sends a reminder email via `EmailPlugin`
+- `SendSMSAlert` → Sends an SMS alert via `MessagePlugin`
+
+Edit this file to add or tweak workflows. The engine reloads configurations each time it starts.
 
 ### 4. Environment Variables
 
@@ -68,6 +75,8 @@ export SMTP_PASS="your-app-password"
 export TWILIO_SID="AC..."
 export TWILIO_TOKEN="your-token"
 export TWILIO_FROM="+1234567890"
+# Optional: turn on verbose SMTP logging
+export SMTP_DEBUG=1
 ```
 
 ### 5. Run the Engine
@@ -76,17 +85,22 @@ export TWILIO_FROM="+1234567890"
 ./build/flowforge
 ```
 
+From the repository root you can also run a single workflow non-interactively:
+
+```bash
+./build/flowforge run SendEmailReminder
+```
+
 ## CLI Features
 
-- Lists available workflows with numbers
-- `a`: Run all workflows (with confirmation)
-- `m`: Run multiple workflows by number/range (e.g., `1,3-4`)
-- `r`: Run single workflow by number or name
-- `d`: Dry-run: show actions without executing
-- `s`: Schedule workflow to run after N minutes (background thread)
-- `q`: Quit
+When you launch `flowforge` you get a simple menu:
 
-Output uses ANSI colors. Scheduling is in-memory; persists across restarts via `data/state.json`.
+1. **List available workflows** — shows the names loaded from `config/workflows.json`.
+2. **Run a workflow** — choose one or more workflows by number (comma-separated) to execute immediately.
+3. **Run with parameter overrides** — walk through each action in a workflow and optionally supply JSON overrides at runtime.
+4. **Exit** — quit the CLI.
+
+All required runtime directories (`data/backups`, `data/uploads`, `logs`) are created automatically when the process starts.
 
 ## Rule Engine
 
@@ -138,20 +152,22 @@ The advanced rule engine allows workflows to run conditionally based on system s
 
 ## Plugins
 
-- **CompressAction** — Compresses specified path to timestamped ZIP in `data/backups/` using ZLIB
-- **EmailPlugin** — Sends email via Gmail SMTP
-- **MessagePlugin** — Sends SMS via Twilio API
+- **CompressAction** — Compresses a target path into a timestamped ZIP inside `data/backups/` using ZLIB.
+- **EmailPlugin** — Sends mail via Gmail SMTP over SMTPS. It honours `SMTP_USER`/`SMTP_PASS` environment variables and falls back to the bundled demo credentials for local testing. Set `SMTP_DEBUG=1` to capture the full SMTP transcript in `logs/email_plugin.log` when troubleshooting.
+- **MessagePlugin** — Sends SMS via Twilio REST API using `TWILIO_SID`, `TWILIO_TOKEN`, and `TWILIO_FROM`. Activity is recorded in `logs/message_plugin.log`.
 
-To add a plugin: Create `.cpp` in `plugins/` implementing `IAction` with `extern "C" IAction* create_action()`. Rebuild with CMake.
+To add a plugin: create a `.cpp` file in `plugins/` that implements `IAction` and exposes `extern "C" IAction* create_action()`, then rebuild with CMake.
 
 ## Logs
 
-Logs to `logs/engine.log`. Override with `FLOWFORGE_LOG_DIR`.
+- Core engine events → `logs/engine.log` (override the directory with `FLOWFORGE_LOG_DIR`).
+- Email plugin activity → `logs/email_plugin.log`; enable extended curl tracing with `SMTP_DEBUG=1`.
+- Message plugin activity → `logs/message_plugin.log`.
 
 ## Troubleshooting
 
 - Plugin load failures: Check paths in error messages
-- Email/SMS failures: Verify credentials and enable verbose logging if available
+- Email/SMS failures: Verify credentials, then inspect `logs/email_plugin.log` or `logs/message_plugin.log`; set `SMTP_DEBUG=1` for detailed SMTP transcripts
 
 ## License
 

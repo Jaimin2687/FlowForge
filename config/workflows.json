@@ -1,7 +1,7 @@
 {
   "workflows": [
     {
-      "name": "BackupFiles",
+      "name": "CompressFiles",
       "actions": [
         { "type": "CompressAction", "params": "../project_folder" }
       ]
@@ -28,60 +28,6 @@
           "params": {
             "recipient": "+916354378559",
             "content": "Server alert: High CPU usage detected!",
-            "delay": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "ConditionalBackup",
-      "rule": {
-        "if": {
-          "and": [
-            { "disk": "> 80%" },
-            { "memory": "> 75%" }
-          ]
-        }
-      },
-      "actions": [
-        { "type": "CompressAction", "params": "../project_folder" }
-      ]
-    },
-    {
-      "name": "TimeBasedAlert",
-      "rule": {
-        "if": {
-          "time": "between 09:00 and 17:00"
-        }
-      },
-      "actions": [
-        {
-          "type": "EmailPlugin",
-          "params": {
-            "recipient": "jay795701@gmail.com",
-            "subject": "Business Hours Alert",
-            "content": "System check during business hours.",
-            "delay": 0
-          }
-        }
-      ]
-    },
-    {
-      "name": "SystemMonitor",
-      "rule": {
-        "if": {
-          "or": [
-            { "cpu": "> 90%" },
-            { "memory": "> 85%" }
-          ]
-        }
-      },
-      "actions": [
-        {
-          "type": "MessagePlugin",
-          "params": {
-            "recipient": "+916354378559",
-            "content": "System alert: High resource usage detected!",
             "delay": 0
           }
         }
