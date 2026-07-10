@@ -4,7 +4,9 @@
 #include <ctime>
 #include <regex>
 #include <iostream>
+#ifdef __APPLE__
 #include <mach/mach.h>  // For macOS memory info
+#endif
 
 using namespace std;
 
@@ -100,6 +102,7 @@ bool RuleEngine::evaluateCpuCondition(const string& cond) {
 }
 
 bool RuleEngine::evaluateMemoryCondition(const string& cond) {
+#ifdef __APPLE__
     // macOS memory info using mach
     mach_msg_type_number_t count = HOST_VM_INFO_COUNT;
     vm_statistics_data_t vmstat;
@@ -108,6 +111,9 @@ bool RuleEngine::evaluateMemoryCondition(const string& cond) {
     }
 
     double used = 1.0 - (double)vmstat.free_count / (vmstat.free_count + vmstat.active_count + vmstat.inactive_count + vmstat.wire_count);
+#else
+    double used = 0.5; // Stub for linux
+#endif
 
     regex pattern(R"(>\s*(\d+)%?)");
     smatch match;

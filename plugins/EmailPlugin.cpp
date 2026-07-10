@@ -14,12 +14,6 @@
 using namespace std;
 using json = nlohmann::json;
 
-// Default SMTP credentials (fallback if environment variables are not provided)
-static constexpr const char* DEFAULT_SMTP_USER = "jay795701@gmail.com";
-// Google app passwords are 16 characters without spaces. The original value was provided as
-// "csvl fziy erdp zxoj"; the spaces have been removed for direct use here.
-static constexpr const char* DEFAULT_SMTP_PASS = "csvlfziyerdpzxoj";
-
 // Global curl initialization tracking
 static bool curl_initialized = false;
 
@@ -126,23 +120,19 @@ private:
             return false;
         }
 
-        // Get environment variables (fallback to built-in defaults when not provided)
+        // Get environment variables
         const char* user_env = getenv("SMTP_USER");
         const char* pass_env = getenv("SMTP_PASS");
 
-        string smtp_user = (user_env && *user_env) ? user_env : DEFAULT_SMTP_USER;
-        string smtp_pass = (pass_env && *pass_env) ? pass_env : DEFAULT_SMTP_PASS;
-
-        if ((!user_env || !*user_env) || (!pass_env || !*pass_env)) {
-            log_message("Using default SMTP credentials from configuration");
-        }
-
-        if (smtp_user.empty() || smtp_pass.empty()) {
-            cerr << "Error: SMTP credentials are not configured" << endl;
-            log_message("SMTP credentials unavailable even after applying defaults");
+        if (!user_env || !*user_env || !pass_env || !*pass_env) {
+            cerr << "Error: SMTP credentials are not configured in environment variables (SMTP_USER, SMTP_PASS)" << endl;
+            log_message("SMTP credentials unavailable from environment variables");
             curl_easy_cleanup(curl);
             return false;
         }
+
+        string smtp_user = user_env;
+        string smtp_pass = pass_env;
 
         // Construct email payload
         string email_payload =
