@@ -153,7 +153,7 @@ The advanced rule engine allows workflows to run conditionally based on system s
 ## Plugins
 
 - **CompressAction** — Compresses a target path into a timestamped ZIP inside `data/backups/` using ZLIB.
-- **EmailPlugin** — Sends mail via Gmail SMTP over SMTPS. It honours `SMTP_USER`/`SMTP_PASS` environment variables and falls back to the bundled demo credentials for local testing. Set `SMTP_DEBUG=1` to capture the full SMTP transcript in `logs/email_plugin.log` when troubleshooting.
+- **EmailPlugin** — Sends mail via Gmail SMTP over SMTPS. It requires `SMTP_USER`/`SMTP_PASS` environment variables to be set. Set `SMTP_DEBUG=1` to capture the full SMTP transcript in `logs/email_plugin.log` when troubleshooting.
 - **MessagePlugin** — Sends SMS via Twilio REST API using `TWILIO_SID`, `TWILIO_TOKEN`, and `TWILIO_FROM`. Activity is recorded in `logs/message_plugin.log`.
 
 To add a plugin: create a `.cpp` file in `plugins/` that implements `IAction` and exposes `extern "C" IAction* create_action()`, then rebuild with CMake.
